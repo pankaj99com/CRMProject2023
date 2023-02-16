@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CRMProject2023_Suite">
+<listeners>
+<listener class-name="com.crm.qa.ExtentReport.ExtentReporterNG"/>
+<listener class-name="Analyzer.MyAnnotationTransformer" />
+</listeners>
+
+  <test name="RegressionTest">
+    <classes>
+      <class name="com.crm.qa.testcases.LoginPageTest"/>
+      <class name="com.crm.qa.testcases.ContactsPageTest"/>
+      <class name="com.crm.qa.testcases.HomePageTest"/>
+    </classes>
+  </test> <!-- RegressionTest -->
+</suite> <!-- CRMProject2023_Suite -->
